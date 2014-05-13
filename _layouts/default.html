@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <title>{% if page.url == '/' %}{{site.maptime.chapter}}{% else %}{{site.maptime.chapter}} | {{page.title}}{% endif %}</title>
+  <link rel='stylesheet' href='{{site.baseurl}}/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.png' type='image/x-icon' />
+</head>
+<body>
+  <header class='fill-blue'>
+    <div class='limiter contain'>
+      <a href='http://maptime.io/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
+          <h1><a class='dark contain z1' href='{{site.baseurl}}/'>{{site.maptime.chapter}}</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/{{site.maptime.twitter}}/' class='contain z1 fill-blue button'>
+            @{{site.maptime.twitter}} on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next {{site.maptime.chapter}} is: 
+          {% if site.categories.event %}
+            {% for item in site.categories.event limit:1 %}
+              {{item.date | date:"%b %d %Y"}}</h3>
+              <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
+            {% endfor %}
+          {% else %}
+            TBA
+          {% endif %}
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/{{site.repo}}/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click this <strong>Watch these events</strong> button.</li> 
+                <li>2. Login to GitHub or signup for an account.</li> 
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li> 
+              </ol>
+              <div class='center'>
+                <img src='{{site.baseurl}}/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        {{content}}
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+     <p>This website is <a href='http://github.com/maptime/{{site.repo}}/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+  <script src='{{site.baseurl}}/js/jquery.min.js'></script>
+<script src='{{site.baseurl}}/js/underscore.min.js'></script>
+<script src='{{site.baseurl}}/site.js'></script>
+</body>
+</html>

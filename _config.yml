@@ -1,0 +1,6 @@
+baseurl: /toronto
+permalink: pretty
+repo: toronto
+maptime:
+  chapter: Maptime Toronto
+  twitter: maptimeto
