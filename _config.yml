@@ -1,6 +1,7 @@
 baseurl: /toronto
 permalink: pretty
+markdown: kramdown
 repo: toronto
 maptime:
   chapter: Maptime Toronto
-  twitter: maptimeto
+  twitter: MaptimeTO

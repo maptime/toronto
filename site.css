@@ -8,6 +8,16 @@ body { color:#404040; }
 a       { color:#279acb; }
 a:hover { text-decoration:underline; }
 
+.dark a, 
+.dark a:hover { color:#fff; text-decoration:none; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { color:#404040; }
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -49,23 +59,29 @@ h6 a:hover { text-decoration:none;}
 .dark { color:#fff; }
 .strong { font-weight:bold; }
 .block { display:block; }
+.capitalize { text-transform:capitalize; }
 
 .sprite {
   background:transparent url(img/sprite@2x.png) no-repeat 0 0;
   display:inline-block;
   text-indent:-999em;
-  background-size:485px 140px;
+  background-size:640px 140px;
   }
   .sprite.maptime {
     background-position:0 0;
     width:385px;
     height:140px;
-    top:-20px;
+    top:-10px;
     }
   .sprite.marker {
     background-position:-385px 0;
     width:100px;
     height:140px;
+    }
+  .sprite.mozilla {
+    background-position:-485px -100px;
+    width:140px;
+    height:40px;
     }
 
 .fill-light   { background-color:#eee; }
@@ -134,11 +150,35 @@ a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
   width:320px; 
   right:auto;
   top:0;
-  bottom:auto;
   left:-330px;
+  bottom:auto;
   }
   .popup.popup-big:after {
-    content:none;
+    top:10px;
+    bottom:auto;
+    right:-8px;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:8px solid rgba(0,0,0,0.10);
+    border-right:none;
+    }
+
+.followers {
+  max-height:480px;
+  position:relative;
+  }
+  .followers:after {
+    background:red;
+    content:'';
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px; 
+    background: -webkit-linear-gradient(top, transparent, #fff);
+    background:    -moz-linear-gradient(top, transparent, #fff);
+    background:     -ms-linear-gradient(top, transparent, #fff);
+    background:      -o-linear-gradient(top, transparent, #fff)
     }
 
 @media only screen and (max-width:800px) {

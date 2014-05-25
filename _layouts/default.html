@@ -7,9 +7,16 @@
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.png' type='image/x-icon' />
 </head>
 <body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
   <header class='fill-blue'>
     <div class='limiter contain'>
-      <a href='http://maptime.io/' class='sprite maptime pin-left'>Maptime</a>
+      <a href='{{site.baseurl}}/' class='sprite maptime pin-left'>Maptime</a>
       <div class='col12 clearfix pad2y'>
         <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
           <h1><a class='dark contain z1' href='{{site.baseurl}}/'>{{site.maptime.chapter}}</a></h1>
@@ -30,7 +37,7 @@
           <h3>The next {{site.maptime.chapter}} is: 
           {% if site.categories.event %}
             {% for item in site.categories.event limit:1 %}
-              {{item.date | date:"%b %d %Y"}}</h3>
+              {{item.date | date:"%A, %b %d %Y"}}</h3>
               <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
             {% endfor %}
           {% else %}
@@ -43,7 +50,7 @@
             <a href='https://github.com/maptime/{{site.repo}}/' class='col12 space-bottom2 button'>Watch these events</a>
             <div class='popup popup-big keyline-all pad1 small round'>
               <ol class='space-bottom1'>
-                <li>1. Click this <strong>Watch these events</strong> button.</li> 
+                <li>1. Click the <strong>Watch these events</strong> button.</li> 
                 <li>2. Login to GitHub or signup for an account.</li> 
                 <li>3. Click the <strong>Watch</strong> button on the repo.</li> 
               </ol>
@@ -54,6 +61,16 @@
           </div>
 
           <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/{{site.repo}}/watchers'>View all</a>
+            </div>
+          </div>
+
+          <div class='sponsors pad2 center round fill-darken0'>
+            <label class='center space-bottom1 small quiet capitalize'>{{site.repo}} Sponsorship</label>
+            <a href='http://www.mozilla.org' class='sprite mozilla'>Mozilla</a>
+          </div>
         </div>
       </aside>
 
