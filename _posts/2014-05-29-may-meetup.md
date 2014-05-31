@@ -3,7 +3,6 @@ layout: event
 category: event
 title: MaptimeTO Launch
 rsvp: https://www.eventbrite.com/e/maptimeto-launch-event-tickets-11709255699
-published: false
 ---
 
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>

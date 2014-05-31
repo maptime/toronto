@@ -1,7 +1,24 @@
+---
+---
 <!DOCTYPE html >
 <html>
 <head>
   <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@{{site.maptime.twitter}}' />
+  <meta property='og:site_name' content='{{site.maptime.chapter}}' />
+  <meta name='twitter:url' content='{{page.permalink}}' />
+  <meta property='og:url' content='{{page.permalink}}' />
+  <meta name='twitter:title' content='{{page.title | replace:"'","&lsquo;"}}' />
+  <meta property='og:title' content='{{page.title | replace:"'","&lsquo;"}}' />
+  <meta name='twitter:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
+  <meta property='og:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
+  {% if page.image %}
+    <meta name='twitter:image' content='{{page.image | replace:"https:","http:"}}' />
+    <meta name='st:image' content='{{page.image | replace:"https:","http:"}}' />
+    <meta property='og:image' content='{{page.image | replace:"https:","http:"}}' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='og:type' content='website' />
+  {% endif %}
   <title>{% if page.url == '/' %}{{site.maptime.chapter}}{% else %}{{site.maptime.chapter}} | {{page.title}}{% endif %}</title>
   <link rel='stylesheet' href='{{site.baseurl}}/site.css' type='text/css'/>
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.png' type='image/x-icon' />
@@ -34,15 +51,8 @@
     <div class='col12 clearfix'>
       <aside class='col3 fr space-bottom2 sidebar'>
         <div class='fill-purple strong dark round pad2 space-bottom2'>
-          <h3>The next {{site.maptime.chapter}} is: 
-          {% if site.categories.event %}
-            {% for item in site.categories.event limit:1 %}
-              {{item.date | date:"%A, %b %d %Y"}}</h3>
-              <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
-            {% endfor %}
-          {% else %}
-            TBA
-          {% endif %}
+          <h3>The next {{site.maptime.chapter}} is:</h3>
+          <div id='rsvpdate'></div>
         </div>
 
         <div class='hide-mobile'>
@@ -50,9 +60,9 @@
             <a href='https://github.com/maptime/{{site.repo}}/' class='col12 space-bottom2 button'>Watch these events</a>
             <div class='popup popup-big keyline-all pad1 small round'>
               <ol class='space-bottom1'>
-                <li>1. Click the <strong>Watch these events</strong> button.</li> 
-                <li>2. Login to GitHub or signup for an account.</li> 
-                <li>3. Click the <strong>Watch</strong> button on the repo.</li> 
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
               </ol>
               <div class='center'>
                 <img src='{{site.baseurl}}/img/watchrepo.png' alt='Watch repo' />
@@ -86,8 +96,25 @@
    </div>
   </footer>
 
-  <script src='{{site.baseurl}}/js/jquery.min.js'></script>
+<script src='{{site.baseurl}}/js/jquery.min.js'></script>
 <script src='{{site.baseurl}}/js/underscore.min.js'></script>
 <script src='{{site.baseurl}}/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  '{% for item in site.categories.event limit:1 %}'
+    date = '{{item.date}}';
+    formatted = '{{item.date | date:"%A, %b %d %Y"}}';
+    link = '{{item.rsvp}}';
+  '{% endfor %}'
+
+  if (date && new Date() < new Date(date)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
 </body>
 </html>
