@@ -5,9 +5,6 @@ title: MaptimeTO Launch
 rsvp: https://www.eventbrite.com/e/maptimeto-launch-event-tickets-11709255699
 ---
 
-<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
-
 Join us Thursday May 29th for the first ever Maptime meetup in Toronto! Venue space has been generously donated by [Mozilla](http://mozilla.org) at their [community space](http://to.mozillacanada.org/).
 
 <div id='map' class='row8 fill-blue col12 map space-bottom2'></div>

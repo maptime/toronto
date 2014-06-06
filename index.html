@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for item in site.posts limit:3 %}
+
   {% if item.category == 'event' %}
     <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
     {{item.content}}
