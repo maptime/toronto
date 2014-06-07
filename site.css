@@ -61,12 +61,24 @@ h6 a:hover { text-decoration:none;}
 .block { display:block; }
 .capitalize { text-transform:capitalize; }
 
+.icon:before,
+.rcon:after,
 .sprite {
   background:transparent url(img/sprite@2x.png) no-repeat 0 0;
   display:inline-block;
   text-indent:-999em;
   background-size:640px 140px;
   }
+  .icon:before,
+  .rcon:after {
+    content:'';
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    }
+  .icon:before { margin-right:5px; }
+  .rcon:after  { margin-left:5px; }
+
   .sprite.maptime {
     background-position:0 0;
     width:385px;
@@ -83,6 +95,9 @@ h6 a:hover { text-decoration:none;}
     width:140px;
     height:40px;
     }
+
+.rcon.right-arrow:after, .icon.right-arrow:before { background-position:-485px 0; }
+.rcon.left-arrow:after, .icon.left-arrow:before  { background-position:-505px 0; }
 
 .fill-light   { background-color:#eee; }
 
