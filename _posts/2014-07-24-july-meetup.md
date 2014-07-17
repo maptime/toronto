@@ -4,6 +4,7 @@ category: event
 date: 2014-07-24
 title: 'Maptime July 2014 - Show and Tell'
 rsvp: http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/
+author: @rweait
 ---
 
 Join us Thursday July 24th for the next Maptime Toronto! Venue space has been generously donated by Ryerson University's Department of Geography and the Master of Spatial Analysis program.
@@ -34,7 +35,6 @@ How to find us: Enter the library from the second floor library entrance.  Then 
 
 [![Map](http://weait.com/sites/default/files/field/image/maptime-jul-2014.png)](http://umap.openstreetmap.fr/en/map/maptime-july-2014_12804)
 
-### RSVP 
+### [RSVP](http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/)
 
-[RSVP](http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/)
-
+You know, you gotta [RSVP](http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/) to attend, right?  Limited seats and massive interest, you dig?  See you there.  
