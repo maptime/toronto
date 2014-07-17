@@ -1,7 +1,7 @@
 ---
 layout: event
 category: event
-title: 'Show and Tell'
+title: 'Maptime July 2014 - Show and Tell'
 rsvp: http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/
 ---
 
@@ -30,6 +30,8 @@ Thursday, 24 July 2014
 Toronto ON  M5B 2K3
 
 How to find us: Enter the library from the second floor library entrance.  Then proceed to the fourth floor via the stairs or elevator within the library. Room LIB489B
+
+[![Map](http://weait.com/sites/default/files/field/image/maptime-jul-2014.png)](http://umap.openstreetmap.fr/en/map/maptime-july-2014_12804)
 
 ### RSVP 
 
