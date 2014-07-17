@@ -18,3 +18,20 @@ After the presentations we'll have our usual coding session. We'll each get to o
 Doors at 6:30 with the action starting shortly after. 
 
 Bring your laptops, enthusiasm, experience, projects and any questions. Beginners encouraged!
+
+### Date and Time
+
+Thursday, 24 July 2014
+6:30pm - 9:30pm
+
+### Location
+
+350 Victoria Street
+Toronto ON  M5B 2K3
+
+How to find us: Enter the library from the second floor library entrance.  Then proceed to the fourth floor via the stairs or elevator within the library. Room LIB489B
+
+### RSVP 
+
+[RSVP](http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/)
+
