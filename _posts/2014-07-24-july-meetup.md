@@ -1,7 +1,6 @@
 ---
 layout: event
 category: event
-date: 1406226618
 title: 'Maptime July 2014 - Show and Tell'
 rsvp: http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/
 author: rweait
