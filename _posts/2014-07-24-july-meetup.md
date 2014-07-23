@@ -6,7 +6,7 @@ rsvp: http://www.meetup.com/OpenStreetMap-Toronto/events/195331122/
 author: rweait
 ---
 
-Join us Thursday July 24th for the next Maptime Toronto! Venue space has been generously donated by Ryerson University's Department of Geography and the Master of Spatial Analysis program.
+Join us Thursday July 24th for the next Maptime Toronto! Venue space has been generously donated by Ryerson University Library and Archives in association with the Department of Geography and the Master of Spatial Analysis program.
 
 ### Show and Tell
 
