@@ -4,6 +4,7 @@ layout: default
 
 <!-- This loops through the paginated posts -->
 {% for item in paginator.posts %}
+{% unless item.category == 'redirect' %}
 <div class='space-bottom4'>
 
   {% if item.category == 'event' %}
@@ -29,6 +30,7 @@ layout: default
 
   {% endif %}
 </div>
+{% endunless %}
 {% endfor %}
 
 <!-- Pagination links -->
