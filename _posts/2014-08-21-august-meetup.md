@@ -8,13 +8,13 @@ author: rweait
 
 Join us Thursday August 21st for the next Maptime Toronto! We're back at the Mozilla Community Space for August so many thanks to Mozilla for the support!
 
-### Show and Tell
+### Talk: Webmaps and your data
 
-It's #maptime.  Maptime August 2014 will include a short presentation, tentatively titled, "QGIS for beginners" by Tristen, "Show and Tell" in addition to our heads-down coding.  
+[Tristen](https://github.com/tristen) will be giving a presentation on various methods to add your own custom data to a map.
 
 ### Hack, Code, and Build
 
-After the presentations we'll have our usual coding session. We'll each get to one of our projects, or collaborate with others on theirs.  There might also be some networking, and perhaps some refreshments off-site afterwards.
+After the presentation we'll have our usual coding session. We'll each get to one of our projects, or collaborate with others on theirs.  There might also be some networking, and perhaps some refreshments off-site afterwards.
 
 Doors at 6:30 with the action starting shortly after. 
 
@@ -29,7 +29,7 @@ Thursday, 21 August 2014
 
 366 Adelaide Street West, Suite 500
 
-[![Map](http://weait.com/sites/default/files/maptime-mozilla-space.png)](http://umap.openstreetmap.fr/en/map/maptimeto-at-the-mozilla-community-space_14562#19/43.64711/-79.39430)
+<script src='https://gist.github.com/tristen/27911d81c80a343bbded.js'></script>
 
 ### [RSVP](http://www.meetup.com/OpenStreetMap-Toronto/events/200276832/)
 
