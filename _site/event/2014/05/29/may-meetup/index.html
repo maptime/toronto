@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@MaptimeTO' />
+  <meta property='og:site_name' content='Maptime Toronto' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='MaptimeTO Launch' />
+  <meta property='og:title' content='MaptimeTO Launch' />
+  <meta name='twitter:description' content='Join us Thursday May 29th for the first ever Maptime meetup in Toronto! Venue space has been generously donated by Mozilla at their community space. We’ll start promptly at 7pm...' />
+  <meta property='og:description' content='Join us Thursday May 29th for the first ever Maptime meetup in Toronto! Venue space has been generously donated by Mozilla at their community space. We’ll start promptly at 7pm...' />
+  
+  <title>Maptime Toronto | MaptimeTO Launch</title>
+  <link rel='stylesheet' href='/toronto/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/toronto/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-blue'>
+    <div class='limiter contain'>
+      <a href='/toronto/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/toronto/'>Maptime Toronto</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/MaptimeTO/' class='contain z1 fill-blue button'>
+            @MaptimeTO on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next Maptime Toronto is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/toronto/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/toronto/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/toronto/watchers'>View all</a>
+            </div>
+          </div>
+
+          <div class='sponsors pad2 center round fill-darken0'>
+            <label class='center space-bottom1 small quiet capitalize'>toronto Sponsorship</label>
+            <a href='http://www.mozilla.org' class='sprite mozilla'>Mozilla</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <h2>MaptimeTO Launch</h2>
+<p>Join us Thursday May 29th for the first ever Maptime meetup in Toronto! Venue space has been generously donated by <a href="http://mozilla.org">Mozilla</a> at their <a href="http://to.mozillacanada.org/">community space</a>.</p>
+
+<div id="map" class="row8 fill-blue col12 map space-bottom2"></div>
+<script>
+var map = L.mapbox.map('map', 'tristen.h186knp8')
+    .setView([43.6472593973924, -79.39437925815582], 17);
+
+var marker = L.mapbox.featureLayer({
+  'type': 'Feature',
+  'properties': {
+    'title': 'Mozilla Community Space',
+    'description': 'Suite 500, 366 Adelaide St W',
+    'marker-color': '#ff8888'
+  },
+  'geometry': {
+    'type': 'Point',
+    'coordinates': [-79.39437925815582, 43.6472593973924 ]
+  }
+}).addTo(map);
+
+marker.eachLayer(function(m) {
+    m.openPopup();
+});
+</script>
+
+<p>We’ll start promptly at 7pm with an opening presentation on what is Maptime followed by table introductions
+with laptops open and dive into some map related projects.</p>
+
+<p>Bring your laptops, enthusiasm, experience, projects and any questions. Beginners encouraged!</p>
+
+
+<div class='keyline-all round pad2 col12 clearfix'>
+  <div class='col8 pad0y'>
+    Join us: <span class='quiet'>Thursday, May 29 2014</span>
+  </div>
+  <div class='col4'>
+    <a class='button fill-orange block' href='https://www.eventbrite.com/e/maptimeto-launch-event-tickets-11709255699'>RSVP</a>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+     <p>This website is <a href='http://github.com/maptime/toronto/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/toronto/js/jquery.min.js'></script>
+<script src='/toronto/js/underscore.min.js'></script>
+<script src='/toronto/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2014,9,18';
+    formatted = 'Thursday, Sep 18 2014';
+    link = 'http://www.meetup.com/OpenStreetMap-Toronto/events/200276892/';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>
