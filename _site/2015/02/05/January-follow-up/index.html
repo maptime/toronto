@@ -1,0 +1,133 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@MaptimeTO' />
+  <meta property='og:site_name' content='Maptime Toronto' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='January Leaflet Tutorial Follow Up' />
+  <meta property='og:title' content='January Leaflet Tutorial Follow Up' />
+  <meta name='twitter:description' content='Thanks to all that made it out to the Leaflet.js workshop in January! The workshop materials have been compiled into a web tutorial so that you can continue learning at...' />
+  <meta property='og:description' content='Thanks to all that made it out to the Leaflet.js workshop in January! The workshop materials have been compiled into a web tutorial so that you can continue learning at...' />
+  
+  <title>Maptime Toronto | January Leaflet Tutorial Follow Up</title>
+  <link rel='stylesheet' href='/toronto/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/toronto/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-blue'>
+    <div class='limiter contain'>
+      <a href='/toronto/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/toronto/'>Maptime Toronto</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/MaptimeTO/' class='contain z1 fill-blue button'>
+            @MaptimeTO on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next Maptime Toronto is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/toronto/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/toronto/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/toronto/watchers'>View all</a>
+            </div>
+          </div>
+
+          <div class='sponsors pad2 center round fill-darken0'>
+            <label class='center space-bottom1 small quiet capitalize'>toronto Sponsorship</label>
+            <a href='http://www.mozilla.org' class='sprite mozilla'>Mozilla</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <h2>January Leaflet Tutorial Follow Up</h2>
+<p>Thanks to all that made it out to the <a href="http://leafletjs.com/">Leaflet.js</a> workshop in January!</p>
+
+<p>The workshop materials have been compiled into a <a href="http://joshuafrazier.info/leaflet-basics/">web tutorial</a> so that you can continue learning at your own pace.</p>
+
+<p>For further info, see the official <a href="http://leafletjs.com/examples.html">Leaflet tutorials</a> and the <a href="http://maptime.io/lessons-resources/#web-mapping">Maptime</a> web mapping resources.</p>
+
+<p>See you next month!</p>
+
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'maptimetoronto'; // required: replace example with your chapters shortname
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+     <p>This website is <a href='http://github.com/maptime/toronto/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/toronto/js/jquery.min.js'></script>
+<script src='/toronto/js/underscore.min.js'></script>
+<script src='/toronto/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2014,9,18';
+    formatted = 'Thursday, Sep 18 2014';
+    link = 'http://www.meetup.com/OpenStreetMap-Toronto/events/200276892/';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@MaptimeTO' />
+  <meta property='og:site_name' content='Maptime Toronto' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='Web Maps 101: Presentation and Workshop' />
+  <meta property='og:title' content='Web Maps 101: Presentation and Workshop' />
+  <meta name='twitter:description' content='Join us Thursday June 19th for the next Maptime Toronto! Venue space has been generously donated by Mozilla at their community space. Building on the success of our first #maptime...' />
+  <meta property='og:description' content='Join us Thursday June 19th for the next Maptime Toronto! Venue space has been generously donated by Mozilla at their community space. Building on the success of our first #maptime...' />
+  
+  <title>Maptime Toronto | Web Maps 101: Presentation and Workshop</title>
+  <link rel='stylesheet' href='/toronto/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/toronto/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-blue'>
+    <div class='limiter contain'>
+      <a href='/toronto/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/toronto/'>Maptime Toronto</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/MaptimeTO/' class='contain z1 fill-blue button'>
+            @MaptimeTO on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next Maptime Toronto is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/toronto/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/toronto/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/toronto/watchers'>View all</a>
+            </div>
+          </div>
+
+          <div class='sponsors pad2 center round fill-darken0'>
+            <label class='center space-bottom1 small quiet capitalize'>toronto Sponsorship</label>
+            <a href='http://www.mozilla.org' class='sprite mozilla'>Mozilla</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <h2>Web Maps 101: Presentation and Workshop</h2>
+<p>Join us Thursday June 19th for the next Maptime Toronto! Venue space has been generously donated by <a href="http://mozilla.org">Mozilla</a> at their <a href="http://to.mozillacanada.org/">community space</a>.</p>
+
+<div id="june-map" class="row8 fill-blue col12 map space-bottom2"></div>
+<script>
+var map = L.mapbox.map('june-map', 'tristen.h186knp8')
+    .setView([43.6472593973924, -79.39437925815582], 17);
+
+var marker = L.mapbox.featureLayer({
+  'type': 'Feature',
+  'properties': {
+    'title': 'Mozilla Community Space',
+    'description': 'Suite 500, 366 Adelaide St W',
+    'marker-color': '#ff8888'
+  },
+  'geometry': {
+    'type': 'Point',
+    'coordinates': [-79.39437925815582, 43.6472593973924 ]
+  }
+}).addTo(map);
+
+marker.eachLayer(function(m) {
+    m.openPopup();
+});
+</script>
+
+<p>Building on the success of our first #maptime event and incorporating feedback from it, we present the June 2014 MaptimeTO. We’re doing a combination Workshop and Hack. </p>
+
+<h3 id="presentation-web-maps-101">Presentation: Web Maps 101</h3>
+
+<p>A short presentation will introduce the broad potential for telling your stories with web maps. The presentation will introduce web mapping concepts and techniques to beginners, and will also be entertaining for the experts in the room.</p>
+
+<h3 id="beginners-workshop-build-your-first-web-map">Beginners’ Workshop: Build your first web map.</h3>
+
+<p>The remainder of the evening will allow workshoppers to build their first web map, either as self learners, gently guided, or with peer-coaching. Prerequisites: Workshoppers are expected to know how to create a web page, html / xml, and css. Workshoppers should bring their own laptop computer with wifi connectivity. #Maptime Hack</p>
+
+<p>Intermediate and advanced attendees will work on their own projects, collaborate and network. #maptime at its best. #maptimers should bring their laptops and projects.</p>
+
+<p>Doors at 6:30 with the action starting shortly after. </p>
+
+<p>Bring your laptops, enthusiasm, experience, projects and any questions. Beginners encouraged!</p>
+
+
+<div class='keyline-all round pad2 col12 clearfix'>
+  <div class='col8 pad0y'>
+    Join us: <span class='quiet'>Thursday, Jun 19 2014</span>
+  </div>
+  <div class='col4'>
+    <a class='button fill-orange block' href='https://www.eventbrite.com/e/maptime-toronto-june-2014-tickets-11883857939?aff=site'>RSVP</a>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+     <p>This website is <a href='http://github.com/maptime/toronto/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/toronto/js/jquery.min.js'></script>
+<script src='/toronto/js/underscore.min.js'></script>
+<script src='/toronto/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2014,9,18';
+    formatted = 'Thursday, Sep 18 2014';
+    link = 'http://www.meetup.com/OpenStreetMap-Toronto/events/200276892/';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>
