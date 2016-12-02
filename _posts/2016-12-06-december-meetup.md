@@ -9,11 +9,11 @@ author: brianbancroft
 
 It's #maptime again!  Maptime is all about learning and sharing knowledge at the intersection of "Maps" and "The Internet".
 
-This month Steve Coast, founder of OpenStreeMap will share his experiences in creating [OpenStreetView](http://openstreetview.org). 
+This month Steve Coast, founder of OpenStreeMap will share his experiences in creating [OpenStreetCam](http://openstreetcam.org). 
 
 As always, we will have a short show and tell where anyone is free to demonstrate their current projects, share key lessons, and/or ask for assistance. Then there will be workshop time where attendees can self-study or assemble in ad-hoc groups for collaboration.
 
-Beginners are welcome. Bring a laptop so that you can work on your projects.
+Beginners are always welcome. Bring a laptop so that you can work on your projects, or start a new one with a friend you haven't met!
 
 Maptime is friendly, diverse and inclusive. Please join us.
 
