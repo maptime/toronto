@@ -24,6 +24,6 @@ Tuesday, December 6, 2016
 
 ### Location
 
-Launch Zone - 3rd floor of Student Centre at Yonge and Gould.
+Launch Zone - 3rd floor of [Ryerson Student Centre](https://www.openstreetmap.org/way/298926536) at Yonge and Gould.
 
 <img src='https://api.mapbox.com/styles/v1/brianbancroft/cip0dndxe0000bonjz1a15zgk/static/-79.380898,43.657396,16.35,0.00,0.00/600x400?access_token=pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA'>
