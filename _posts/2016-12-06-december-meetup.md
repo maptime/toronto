@@ -5,11 +5,11 @@ title: 'Maptime December 2016'
 rsvp: https://www.meetup.com/OpenStreetMap-Toronto/events/235919085/
 author: brianbancroft
 ---
-### Data Formats and Conversions
+### OpenStreetCam with OpenStreetMap founder Steve Coast
 
 It's #maptime again!  Maptime is all about learning and sharing knowledge at the intersection of "Maps" and "The Internet".
 
-This month Steve Coast, founder of OpenStreeMap will share his experiences in creating [OpenStreetCam](http://openstreetcam.org). 
+This month Steve Coast, founder of [OpenStreetMap](https://www.openstreetmap.org/) will share his experiences in creating [OpenStreetCam](http://openstreetcam.org). 
 
 As always, we will have a short show and tell where anyone is free to demonstrate their current projects, share key lessons, and/or ask for assistance. Then there will be workshop time where attendees can self-study or assemble in ad-hoc groups for collaboration.
 
