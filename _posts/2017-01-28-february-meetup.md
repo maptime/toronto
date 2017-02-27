@@ -5,7 +5,7 @@ title: 'Maptime February 2017'
 rsvp: https://www.meetup.com/OpenStreetMap-Toronto/events/236883325/
 author: brianbancroft
 ---
-### Topographic 3D Printing Demo plus Freestyle!
+### Mapping plus 3D Printing Demo!
 
 3D Printing has been a tool that is starting to mature. Join *Claus Rinner* and *Selasi Dorkenoo* as they demonstrate what has been done and can be done with GIS and a 3D Printer. There is also a possibility that someone's GIS project can also be converted into a printed object, so be sure to bring your projects. If you have prior experience and software in using 3D printing, bring that as well!
 
