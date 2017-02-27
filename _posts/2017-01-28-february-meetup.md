@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: 'Maptime February 2017'
-rsvp: https://www.meetup.com/OpenStreetMap-Toronto/events/236883325/
+rsvp: https://www.meetup.com/OpenStreetMap-Toronto/events/238039327/
 author: brianbancroft
 ---
 ### Mapping plus 3D Printing Demo!
