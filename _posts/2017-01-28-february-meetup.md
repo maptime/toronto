@@ -7,7 +7,7 @@ author: brianbancroft
 ---
 ### Mapping plus 3D Printing Demo!
 
-3D Printing has been a tool that is starting to mature. Join *Claus Rinner* and *Selasi Dorkenoo* as they demonstrate what has been done and can be done with GIS and a 3D Printer. There is also a possibility that someone's GIS project can also be converted into a printed object at this event, so be sure to bring your projects. If you have prior experience and software in using 3D printing, bring that as well!
+3D Printing has been a tool that is starting to mature. Join *Claus Rinner* and *Selasi Dorkenoo* as they demonstrate what has been done and can be done with GIS and a 3D Printer. We can also help attendees turn their GIS project into a printable 3D model at this event so be sure, so be sure to bring your projects. If you have prior experience and software in using 3D printing, bring that as well!
 
 Bring a laptop! While it isn't mandatory, hands-on learning and helping others is the best way to learn. There are many opportunities to break out and work on side projects with people you meet to build on the skills you learned earlier, or learn new ones!
 
